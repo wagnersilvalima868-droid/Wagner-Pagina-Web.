@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Estilo Único - Moda para Você</title>
+
+    <style>
+        /* CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F0F4F9;
+            color: #123359;
+        }
+
+        /* CABEÇALHO */
+        header {
+            background-color: #123359;
+            color: #F0F4F9;
+            text-align: center;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 30px 20px;
+            border: 5px solid #F0F4F9;
+            border-radius: 8px;
+        }
+
+        header h1 {
+            margin-bottom: 15px;
+            font-size: 30px;
+        }
+
+        header p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* MENU */
+        nav {
+            background-color: #123359;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: #F0F4F9;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #9fc8ef;
+        }
+
+        /* CONTEÚDO PRINCIPAL */
+        main {
+            background-color: #F0F4F9;
+            color: #123359;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        /* PUBLICAÇÕES */
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+        }
+
+        .imagem-post {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        article h2 {
+            margin-bottom: 12px;
+            font-size: 23px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        article p {
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        /* BOTÕES DE INTERAÇÃO */
+        .interacoes {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .interacoes button {
+            background-color: #F0F4F9;
+            border: 1px solid #b5c4d5;
+            padding: 7px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .interacoes button:hover {
+            background-color: #d9e7f5;
+        }
+
+        /* SOBRE A LOJA */
+        aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-left: 5px solid #123359;
+            border-radius: 5px;
+        }
+
+        aside h2 {
+            margin-bottom: 12px;
+        }
+
+        /* RODAPÉ */
+        footer {
+            background-color: #123359;
+            color: #F0F4F9;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin-bottom: 8px;
+        }
+
+        /* RESPONSIVIDADE */
+        @media (max-width: 600px) {
+
+            header {
+                margin: 10px;
+                padding: 20px 10px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 7px;
+                font-size: 14px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            article {
+                padding: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>Estilo Único - Moda para Você</h1>
+
+        <p>
+            Descubra novas tendências, encontre seu estilo
+            e vista-se bem com qualidade, personalidade
+            e preços acessíveis.
+        </p>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#sobre">Sobre a loja</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="inicio">
+
+        <h2 id="publicacoes">Nossas publicações</h2>
+
+        <br>
+
+        <!-- PRIMEIRO POST -->
+        <article>
+
+            <img
+                class="imagem-post"
+                src="https://gemini.google.com/b58a9f97-d50c-40d0-862c-a615b7e32e26.jpj"
+                alt="Logo de uma loja de roupas chamada Mundo da Moda">
+
+            <h2>Bem-vindo ao Mundo da Moda!</h2>
+
+            <p class="artigo-autor">
+                Por: Wagner Silva Lima
+            </p>
+
+            <p>
+                Bem-vindos ao meu blog relacionado à minha
+                loja de roupas! Aqui você encontra roupas
+                para diferentes estilos e ocasiões,
+                combinando qualidade, conforto e preços
+                que cabem no seu orçamento.
+            </p>
+
+            <div class="interacoes">
+
+                <button onclick="curtir(this)">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button onclick="gostei(this)">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- SEGUNDO POST -->
+        <article>
+
+            <h2>Conheça nossas tendências!</h2>
+
+            <p class="artigo-autor">
+                Por: Wagner Silva Lima
+            </p>
+
+            <p>
+                A moda está sempre se renovando!
+                Aqui você encontra novidades, combinações
+                modernas e inspirações para criar looks
+                incríveis e expressar sua personalidade.
+            </p>
+
+            <div class="interacoes">
+
+                <button onclick="curtir(this)">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button onclick="gostei(this)">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- TERCEIRO POST -->
+        <article>
+
+            <h2>Dicas para encontrar seu estilo</h2>
+
+            <p class="artigo-autor">
+                Por: Wagner Silva Lima
+            </p>
+
+            <p>
+                Encontrar seu próprio estilo é uma forma
+                de demonstrar sua personalidade.
+                Experimente diferentes combinações,
+                escolha peças confortáveis e aproveite
+                a moda do seu jeito!
+            </p>
+
+            <div class="interacoes">
+
+                <button onclick="curtir(this)">
+                    ❤️ <span>0</span>
+                </button>
+
+                <button onclick="gostei(this)">
+                    👍 <span>0</span>
+                </button>
+
+            </div>
+
+        </article>
+
+        <!-- SOBRE A LOJA -->
+        <aside id="sobre">
+
+            <h2>Sobre a nossa loja</h2>
+
+            <p>
+                A Estilo Único é um espaço dedicado à moda,
+                qualidade e personalidade. Nosso objetivo
+                é oferecer opções de roupas para diferentes
+                gostos e ocasiões, sempre buscando unir
+                conforto, beleza e preços acessíveis.
+            </p>
+
+        </aside>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer id="contato">
+
+        <p><strong>Estilo Único - Moda para Você</strong></p>
+
+        <p>Desenvolvido por Wagner Silva Lima</p>
+
+        <p>Blog de moda e tendências.</p>
+
+        <p>© 2026 - Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- JAVASCRIPT: FUNCIONALIDADE DOS BOTÕES -->
+    <script>
+
+        function curtir(botao) {
+
+            let contador = botao.querySelector("span");
+
+            let quantidade = Number(contador.textContent);
+
+            quantidade++;
+
+            contador.textContent = quantidade;
+
+        }
+
+        function gostei(botao) {
+
+            let contador = botao.querySelector("span");
+
+            let quantidade = Number(contador.textContent);
+
+            quantidade++;
+
+            contador.textContent = quantidade;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
